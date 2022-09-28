@@ -30,8 +30,8 @@
 
 
     let page1Btn1 = document.getElementById('page1Btn1');
-    // let page1Btn2 = document.getElementById('page1Btn2');
-    // let page1Btn3 = document.getElementById('page1Btn3');
+    let page1Btn2 = document.getElementById('page1Btn2');
+    let page1Btn3 = document.getElementById('page1Btn3');
     let page1Btn4 = document.getElementById('page1Btn4');
     let page1Btn5 = document.getElementById('page1Btn5');
     let page1Btn6 = document.getElementById('page1Btn6');
@@ -55,8 +55,8 @@
     let page2Btn4 = document.getElementById('page2Btn4');
 
     page1Btn1.addEventListener('click', chooseTV);
-    // page1Btn2.addEventListener('click', chooseTV);
-    // page1Btn3.addEventListener('click', chooseTV);
+    page1Btn2.addEventListener('click', chooseTV);
+    page1Btn3.addEventListener('click', chooseTV);
     page1Btn4.addEventListener('click', chooseTV);
     page1Btn5.addEventListener('click', chooseTV);
     page1Btn6.addEventListener('click', chooseTV);

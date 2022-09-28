@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octavaswitch Interface Update</title>
+    <script type="text/javascript" src="index_bg.js"></script>  
+    <style type="text/css">
+        #container{
+            font-family: Arial, Helvetica, sans-serif;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+          
+        }
+        form{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            padding-top:50px;
+            padding-bottom:50px;
+            padding-left: 100px;
+            padding-right: 100px;
+            border:1px solid grey;
+            border-radius: 10px;
+        
+        }
+        .row{
+            display:flex;
+            justify-content: center;
+            margin-top:50px;
+            width:100%;
+        }
+
+        input{
+            align-items: center;
+            padding:15px;
+   
+        }
+
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <form action="cgi-bin/bgupload.cgi" enctype="multipart/form-data" method="post">
+    
+            <h2>
+              Octavaswitch Interface Update
+            </h2>
+
+            <div class = 'row'>
+                <input type="file" name="bgfile" id="file" onchange="verificationPicFile(this)">
+            </div>
+           
+           <div class = 'row'>
+                <input type="submit" value="Upload" onclick="disabled=true;submit()">
+           </div>
+        </form>
+    
+    </div>
+    
+</body>
+</html>
